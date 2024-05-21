@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} Timesheet {% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Timesheet</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </main>
+{% endblock %}
