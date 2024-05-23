@@ -3,20 +3,20 @@
 
 {% block content %}
     <header>
-        <h1>Timesheet</h1>
+        <h1 class="p-2 d-flex justify-content-center align-items-center text-bg-primary">Timesheet</h1>
     </header>
-    <main>
-        <form action="#" method="POST">
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+    <main class="container-md">
+        <form class="d-flex flex-column justify-content-center align-items-center" action="/login" method="POST">
+            <div class="my-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" name="email" id="email" required>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
+            <div class="my-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password" required>
             </div>
-            <div>
-                <input type="submit" value="Login">
+            <div class="w-25 my-3">
+                <input class="w-100 form-control text-bg-primary" type="submit" value="Login">
             </div>
         </form>
     </main>
